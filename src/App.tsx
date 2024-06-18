@@ -1,5 +1,6 @@
 import "../src/css/main.css";
 import "../src/css/curves-section.css";
+import "../src/css/animating-gradients.css";
 
 function App() {
   return (
@@ -97,6 +98,9 @@ function App() {
             quasi? Illo, aliquid!
           </p>
         </section>
+      </section>
+      <section className="animating-gradient-section">
+        <button className="fun">Hover Me</button>
       </section>
     </>
   );

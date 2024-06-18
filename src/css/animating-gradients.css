@@ -1,0 +1,35 @@
+:root {
+  --gradient: 45deg, purple, red, pink, orange, yellow, white, yellow, orange,
+    pink, red, purple;
+}
+
+.animating-gradient-section {
+  background-image: linear-gradient(var(--gradient));
+  padding: 1rem;
+  background-size: 400%;
+  animation: bg-animation 5s infinite;
+}
+
+.fun {
+  border: 5px solid white;
+  padding: 0.5em 1.5em;
+  font-size: 2rem;
+  background-size: 300%;
+  background-image: linear-gradient(var(--gradient));
+  background-position: left;
+  transition: background-position 1s;
+}
+
+.fun:hover,
+.fun:focus {
+  background-position: right;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
