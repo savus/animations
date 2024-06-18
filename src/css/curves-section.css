@@ -1,0 +1,112 @@
+.curves-section {
+  padding: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  background-color: #202731;
+  margin: 0;
+}
+
+.curves-section section {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
+.curves-section .blue {
+  background-color: blue;
+}
+
+.curves-section .red {
+  background-color: red;
+}
+
+.curves-section .pink {
+  background-color: pink;
+}
+
+.curves-section .dark {
+  background-color: #202731;
+}
+
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #202731;
+  transform: translate(85%, 60%);
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #3c31dd;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
+.bubble {
+  z-index: 2;
+}
+
+.bubble::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background-color: #0f0f10;
+  z-index: -1;
+}
+
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waves svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 196px;
+}
+
+.waves .shape-fill {
+  fill: #fbfbfb;
+}
+
+.spacer {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  margin: 100px 0;
+}
+
+.layer-1 {
+  background-image: url("../assets/layered-waves-haikei.svg");
+  height: 60%;
+}
