@@ -1,6 +1,7 @@
 import "../src/css/main.css";
 import "../src/css/curves-section.css";
 import "../src/css/animating-gradients.css";
+import "../src/css/marquee.css";
 
 function App() {
   return (
@@ -101,6 +102,42 @@ function App() {
       </section>
       <section className="animating-gradient-section">
         <button className="fun">Hover Me</button>
+      </section>
+      <section className="marquee-section">
+        <div className="marquee">
+          <ul className="marquee-content">
+            <li>
+              <i className="fab fa-codepen"></i>
+            </li>
+            <li>
+              <i className="fab fa-dev"></i>
+            </li>
+            <li>
+              <i className="fab fa-react"></i>
+            </li>
+            <li>
+              <i className="fab fa-vuejs"></i>
+            </li>
+            <li>
+              <i className="fab fa-node"></i>
+            </li>
+            <li>
+              <i className="fab fa-aws"></i>
+            </li>
+            <li>
+              <i className="fab fa-docker"></i>
+            </li>
+            <li>
+              <i className="fab fa-android"></i>
+            </li>
+            <li>
+              <i className="fab fa-github"></i>
+            </li>
+            <li>
+              <i className="fab fa-github"></i>
+            </li>
+          </ul>
+        </div>
       </section>
     </>
   );
