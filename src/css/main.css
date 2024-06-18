@@ -2,7 +2,6 @@
   --marquee-width: 80vw;
   --marquee-height: 15vh;
   --marquee-elms-displayed: 5;
-  --marquee-elements: 10;
   --marquee-elm-width: calc(
     var(--marquee-width) / var(--marquee-elms-displayed)
   );
