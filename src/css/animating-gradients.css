@@ -1,6 +1,10 @@
 :root {
   --gradient: 45deg, purple, red, pink, orange, yellow, white, yellow, orange,
     pink, red, purple;
+  --gradient-1: #e86ed4;
+  --gradient-2: #fe65a3;
+  --gradient-3: #2b4ab4;
+  --gradient-4: #6982c5;
 }
 
 .animating-gradient-section {
